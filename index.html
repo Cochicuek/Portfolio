@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | Ayanni Perez</title>
+    <meta name="description" content="Portafolio personal de Ayanni Perez, Product Manager con experiencia en desarrollo web y gestión de proyectos tecnológicos" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ptp7sde.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              floatSlow: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              floatFast: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-12px)' },
+              },
+            },
+            animation: {
+              floatSlow: 'floatSlow 8s ease-in-out infinite',
+              floatFast: 'floatFast 5s ease-in-out infinite',
+            },
+            fontFamily: {
+              body: ['freight-micro-pro', 'serif'],
+              display: ['neue-haas-grotesk-display', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              background: '#01020D',
+              body: '#DEDEDE',
+              primary: '#6A40ED',
+              gradientStart: '#6A40ED',
+              gradientEnd: '#12174C',
+            },
+            fontSize: {
+              xs: ['12px', '16px'],
+              sm: ['14px', '20px'],
+              base: ['16px', '24px'],
+              lg: ['18px', '28px'],
+              xl: ['20px', '30px'],
+              '2xl': ['24px', '34px'],
+              '3xl': ['32px', '40px'],
+              '4xl': ['40px', '48px'],
+              '5xl': ['56px', '64px'],
+              '6xl': ['84px', '96px'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background text-body font-body bg-fixed bg-no-repeat bg-center bg-cover bg-[url('./assets/background.png')]">
+    <header class="sticky top-0 left-0 right-0 backdrop-blur-sm z-50 relative w-full">
+      <div class="container mx-auto pt-4">
+        <nav class="flex justify-between items-center pb-4 border-b-2 border-primary lg:px-4">
+          <img src="./assets/logo.webp" alt="Logo" class="w-20 px-4" />
+          <ul class="hidden lg:flex space-x-6 font-display font-semibold">
+            <li><a href="#sobre-mi" class="hover:text-primary transition-colors">Sobre mí</a></li>
+            <li><a href="#proyectos" class="hover:text-primary transition-colors">Proyectos</a></li>
+            <li><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section id="hero" class="relative min-h-[85vh] lg:max-w-7xl md:max-w-xl mx-auto">
+      <!-- Background elements -->
+      <div class="absolute inset-0 z-0 md:-translate-y-10">
+        <img src="./assets/balloon 1.png" alt="" class="absolute right-0 pt-20 w-40 lg:w-[396px] h-auto animate-floatFast md:pt-20" />
+        <img src="./assets/box 1.png" alt="" class="absolute left-0 bottom-[-20px] pb-10 w-40 lg:w-[396px] h-auto animate-floatFast md:pt-20" />
+      </div>
+
+      <!-- Hero content -->
+      <div class="relative z-20 flex min-h-screen items-center justify-center">
+        <div class="flex flex-col text-left max-w-124">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-body">
+            Ayanni Pérez
+            <br />
+            Hernández
+          </h1>
+
+          <p class="mt-4 text-lg lg:text-3xl font-display font-bold text-body">Product Manager & UX/UI Designer</p>
+
+          <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+            <span class="font-display font-semibold border-2 border-primary rounded-[100px] px-4 py-2">Management</span>
+            <span class="font-display font-semibold border-2 border-primary rounded-[100px] px-4 py-2">Innovation</span>
+            <span class="font-display font-semibold border-2 border-primary rounded-[100px] px-4 py-2">Design</span>
+            <span class="font-display font-semibold border-2 border-primary rounded-[100px] px-4 py-2">Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="relative mx-auto max-w-7xl px-6 lg:px-12">
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="relative z-20 pt-0 pb-12">
+        <div class="container px-4 flex flex-col items-center lg:flex-row gap-12">
+          <!-- Texto -->
+          <div class="max-w-xl mx-auto lg:mx-0 lg:mr-24">
+            <header class="flex items-center gap-6 mb-8">
+              <h2 class="font-body text-3xl font-semibold italic whitespace-nowrap">Sobre mí</h2>
+              <div class="flex-1 h-px border-2 border-white"></div>
+            </header>
+
+            <article class="space-y-4 font-display text-body text-md lg:text-base leading-relaxed">
+              <p>
+                Como Product Manager Jr. y UX/UI Designer, mi carrera se ha construido sobre una base sólida de liderazgo, creatividad y tecnología. Mi trayectoria es un reflejo de mi adaptabilidad,
+                pasando de ser un emprendedor co-propietario de un restaurante a dominar el diseño gráfico y la edición de video, lo que me llevó a colaborar en campañas publicitarias para la agencia
+                Magnefix.
+              </p>
+              <p>
+                Mi pasión por el desarrollo profesional me impulsó a especializarme en diseño UX/UI, adquiriendo habilidades en herramientas como Figma, Miro y Marvel, así como un profundo
+                conocimiento de desarrollo Front-End (HTML, CSS, JS, React, Tailwind, Next.js y Git), lo que me ha permitido tener una visión integral del ciclo de desarrollo del producto.
+              </p>
+              <p>
+                Actualmente, aplico estos conocimientos como Product Manager Jr. en la startup Revorise. He tenido la oportunidad de formar y liderar mi propio equipo de hasta 15 personas,
+                supervisando el diseño y la implementación de más de 80 páginas web enfocadas en la generación de leads. Entre nuestros logros más destacados, concretamos proyectos para empresas de
+                bienes raíces y viajes en Dubái, así como plataformas de inversión para brokers de criptomonedas. Colaboro estrechamente con equipos internacionales en países como Dubái, Israel y
+                Ucrania, lo que me ha permitido perfeccionar mis habilidades de gestión, desarrollo web, diseño y comunicación en inglés.
+              </p>
+            </article>
+
+            <div class="mt-8 h-px border-2 border-white"></div>
+          </div>
+
+          <!-- Imagen -->
+          <img src="./assets/retrato.png" alt="Retrato" class="h-72 mx-auto rounded-lg drop-shadow-lg shadow-primary shadow-md md:h-96" />
+        </div>
+      </section>
+
+      <!-- EXPERIENCIA -->
+      <section id="experiencia" class="relative z-20 py-12">
+        <div class="container mx-auto px-4 flex flex-col items-center lg:flex-row gap-12">
+          <!-- Experiencia -->
+          <article class="border-2 border-white rounded-lg p-4 max-w-lg mx-auto lg:mx-0 lg:mr-48">
+            <header class="mb-4">
+              <h2 class="text-3xl font-bold font-body italic">Mi experiencia</h2>
+            </header>
+
+            <!-- Rol 1 -->
+            <div class="mb-8">
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">2024 Junio - Actualidad | Product Manager</h3>
+              <p class="text-lg font-display text-white italic mb-2">NativeBo & Revorise</p>
+              <p class="text-md font-medium font-display text-white">
+                Lidero equipos multidisciplinarios en proyectos digitales internacionales, gestionando más de 80 sitios y landing pages orientadas a generación de leads. Combino gestión de producto,
+                UX/UI y desarrollo Front-End para ofrecer soluciones efectivas y centradas en el usuario.
+              </p>
+            </div>
+
+            <!-- Rol 2 -->
+            <div class="mb-8">
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">2023 Agosto - 2024 Junio | UX/UI Designer</h3>
+              <p class="text-lg font-display text-white italic mb-2">NativeBo</p>
+              <p class="text-md font-medium font-display text-white">
+                En mi primer etapa trabajando para NativeBo diseñé y colaboré con equipos de desarrollo web, marketing y copywritting para llevar a cabo +50 landing pages enfocadas a la generación de
+                leads con marketing digital.
+              </p>
+            </div>
+
+            <!-- Rol 3 -->
+            <div>
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">2022 Septiembre - 2023 Junio | Editor de video y diseño gráfico</h3>
+              <p class="text-lg font-display text-white italic mb-2">Magnefix</p>
+              <p class="text-md font-medium font-display text-white">Trabajé en la creación de contenido visual para campañas publicitarias, edición de video y diseño gráfico.</p>
+            </div>
+          </article>
+
+          <!-- Skills -->
+          <aside class="max-w-md mx-auto lg:mx-0 px-4 lg:px-12 py-4">
+            <header class="mb-4">
+              <h2 class="text-3xl font-bold font-body italic">Skills Técnicas</h2>
+            </header>
+
+            <!-- Coding -->
+            <section class="mb-8">
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">Coding</h3>
+              <div class="flex flex-wrap gap-4 pr-24">
+                <img src="./assets/html.png" alt="HTML" class="w-12 h-auto" />
+                <img src="./assets/css.png" alt="CSS" class="w-12 h-auto" />
+                <img src="./assets/js.png" alt="JavaScript" class="w-12 h-auto" />
+                <img src="./assets/tailwind.png" alt="Tailwind" class="w-12 h-auto" />
+                <img src="./assets/react.png" alt="React" class="w-12 h-auto" />
+                <img src="./assets/next.png" alt="Next.js" class="w-12 h-auto" />
+                <img src="./assets/git.png" alt="Git" class="w-12 h-auto" />
+              </div>
+            </section>
+
+            <!-- Metodologías -->
+            <section class="mb-8">
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">Metodologías Ágiles</h3>
+              <ul class="list-disc list-inside text-md font-medium font-display text-white">
+                <li>Scrum</li>
+                <li>Agile</li>
+                <li>Design Thinking</li>
+                <li>Lean UX</li>
+                <li>Sprints</li>
+                <li>Kanban</li>
+              </ul>
+            </section>
+
+            <!-- Herramientas -->
+            <section>
+              <h3 class="text-2xl font-bold font-display text-primary mb-2">Herramientas de Diseño, Video & Organización</h3>
+              <ul class="list-disc list-inside text-md font-medium font-display text-white">
+                <li>Figma</li>
+                <li>Adobe Suite (Ps, Illustrator, Premiere, etc.)</li>
+                <li>Miro</li>
+                <li>Trello</li>
+                <li>Notion</li>
+                <li>Jira</li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="relative z-20 container mx-auto px-4 py-12">
+        <header class="mb-16">
+          <h2 class="text-3xl font-bold font-body italic">Proyectos & Sitios Web</h2>
+        </header>
+
+        <!-- Proyecto: Propexito -->
+        <article class="pb-24">
+          <header>
+            <h3 class="text-2xl font-bold font-display text-white mb-8 pb-2 border-b-2 border-primary">Propexito.com</h3>
+          </header>
+
+          <div class="bg-black rounded-2xl overflow-hidden">
+            <img src="./assets/propexito.png" alt="Propexito" class="w-full h-auto" />
+
+            <div class="px-4">
+              <p class="text-white font-display pt-4 pb-2">
+                Como líder de diseño de Propexito.com, dirigí la creación de una plataforma moderna enfocada en brindar a los usuarios una experiencia clara, atractiva y confiable dentro del mundo del
+                trading. Supervisé el proceso completo de diseño UX/UI, desde la arquitectura de información y los flujos de usuario hasta la identidad visual y la interfaz final, asegurando
+                coherencia y alineación con los objetivos del negocio.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-2">
+                Colaboré estrechamente con el equipo de desarrollo y marketing para garantizar una navegación fluida, elementos visuales de alto impacto y un enfoque centrado en la conversión.
+                Implementamos una estética moderna, profesional y minimalista que refuerza la credibilidad de la marca y mejora la confianza del usuario.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-4">Resultados: Mejora en la retención de usuarios y en la conversión de leads.</p>
+            </div>
+
+            <div class="flex justify-center">
+              <a href="https://propexito.com" target="_blank" class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center">Ver sitio web</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: Enfermeras Integrales -->
+        <article class="pb-24">
+          <header>
+            <h3 class="text-2xl font-bold font-display text-white mb-8 pb-2 border-b-2 border-primary">EnfermerasIntegrales.com</h3>
+          </header>
+
+          <div class="bg-black rounded-2xl overflow-hidden">
+            <img src="./assets/enfermeras.png" alt="Enfermeras Integrales" class="w-full h-auto" />
+
+            <div class="px-4">
+              <p class="text-white font-display pt-4 pb-2">
+                En el proyecto EnfermerasIntegrales.com, dirigí el proceso completo de diseño, desarrollo y creación de contenido. Coordiné al equipo encargado del diseño visual, la programación y la
+                redacción de textos, asegurando coherencia estética, funcionalidad y claridad comunicativa.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-2">
+                Además, la finalidad principal del proyecto fue optimizar el SEO y fortalecer la generación de leads para la empresa, posicionando el sitio como un canal efectivo para captar nuevos
+                clientes y mejorar su visibilidad en buscadores.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-4">Resultados: Mejora en la retención de usuarios y en la conversión de leads.</p>
+            </div>
+
+            <div class="flex justify-center">
+              <a href="https://enfermerasintegrales.com" target="_blank" class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center">Ver sitio web</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto: The True Advance -->
+        <article class="pb-24">
+          <header>
+            <h3 class="text-2xl font-bold font-display text-white mb-8 pb-2 border-b-2 border-primary">TheTrueAdvance.com</h3>
+          </header>
+
+          <div class="bg-black rounded-2xl overflow-hidden">
+            <img src="./assets/tta.png" alt="The True Advance" class="w-full h-auto" />
+
+            <div class="px-4">
+              <p class="text-white font-display pt-4 pb-2">
+                Como Product Manager y UX/UI Designer de TheTrueAdvance.com, lideré el diseño y desarrollo de una plataforma digital orientada a comunicar confianza, profesionalismo y claridad dentro
+                del sector financiero y de inversión.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-2">
+                Trabajé de manera cercana con los equipos de desarrollo y marketing para alinear la interfaz visual con los objetivos de negocio, priorizando una navegación fluida, jerarquías claras
+                de contenido y elementos visuales estratégicos enfocados en la conversión.
+              </p>
+
+              <p class="text-white font-display pt-2 pb-4">
+                Resultados: optimización de la experiencia del usuario, incremento en la claridad del mensaje y mejora en la captación y conversión de leads.
+              </p>
+            </div>
+
+            <div class="flex justify-center">
+              <a href="https://thetrueadvance.com" target="_blank" class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center">Ver sitio web</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- LANDING PAGES -->
+      <section id="landing-pages" class="relative z-20 py-12">
+        <div class="container mx-auto px-4">
+          <header class="mb-16 text-center lg:text-left">
+            <h2 class="text-3xl font-bold font-body italic">Landing Pages</h2>
+          </header>
+
+          <!-- Grid -->
+          <div class="flex flex-col items-center lg:flex-row lg:items-start gap-8 justify-between mb-12">
+            <!-- Tevanao -->
+            <article class="bg-black rounded-2xl overflow-hidden flex flex-col items-start max-w-72 mx-auto lg:mx-0">
+              <img src="./assets/tevanao.png" alt="Tevanao" class="w-72 h-auto" />
+
+              <div class="px-4 pt-4 pb-2">
+                <h3 class="text-white font-display font-semibold">Tevanao.com</h3>
+              </div>
+
+              <p class="text-white font-display px-4 pb-4">Tevanao es una tienda online de tés orgánicos premium con enfoque en bienestar y diseño elegante.</p>
+
+              <div class="flex justify-center w-full mt-auto">
+                <a href="https://tevanao.com" target="_blank" class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center">Ver landing page</a>
+              </div>
+            </article>
+
+            <!-- Troncoso -->
+            <article class="bg-black rounded-2xl overflow-hidden flex flex-col items-start max-w-72 mx-auto lg:mx-0">
+              <img src="./assets/troncozo.png" alt="Troncoso" class="w-72 h-auto" />
+
+              <div class="px-4 pt-4 pb-2">
+                <h3 class="text-white font-display font-semibold">Troncoso.com</h3>
+              </div>
+
+              <p class="text-white font-display px-4 pb-4">Troncoso es un sitio web profesional enfocado en comunicar servicios de forma clara, moderna y confiable.</p>
+
+              <div class="flex justify-center w-full mt-auto">
+                <a href="https://portfolio.shmin-ib.com/landings/troncoso/index.html" target="_blank" class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center">
+                  Ver landing page
+                </a>
+              </div>
+            </article>
+
+            <!-- Intelilocks -->
+            <article class="bg-black rounded-2xl overflow-hidden flex flex-col items-start max-w-72 mx-auto lg:mx-0">
+              <img src="./assets/intelilocks.png" alt="Intelilocks" class="w-72 h-auto" />
+
+              <div class="px-4 pt-4 pb-2">
+                <h3 class="text-white font-display font-semibold">Intelilocks.co</h3>
+              </div>
+
+              <p class="text-white font-display px-4 pb-4">Intelilocks es una plataforma digital enfocada en soluciones de seguridad inteligente, orientada a la confianza del usuario.</p>
+
+              <div class="flex justify-center w-full mt-auto">
+                <a
+                  href="https://portfolio.shmin-ib.com/landings/intelilocks/index.html#hero"
+                  target="_blank"
+                  class="w-full bg-primary text-xl font-display font-semibold py-2 px-4 rounded-xl m-4 text-center"
+                >
+                  Ver landing page
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex justify-center">
+            <a href="./landings.html" class="w-full max-w-md bg-primary text-xl font-display font-semibold py-2 px-4 rounded-full text-center block">Ver más landing pages</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="relative z-20 pt-24 pb-12">
+        <div class="container mx-auto px-4">
+          <header class="mb-16 text-center lg:text-left">
+            <h2 class="text-3xl font-bold font-body italic">Contacto</h2>
+          </header>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+node_modules/
+.vscode/
+.env
+*.log
+=======
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.local
+>>>>>>> 87ed8f02c17768a590b64e268138791f7f37be79
