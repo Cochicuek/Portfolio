@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,20 +54,43 @@
     </script>
   </head>
   <body class="bg-background text-body font-body bg-fixed bg-no-repeat bg-center bg-cover bg-[url('./assets/background.png')]">
-    <header class="sticky top-0 left-0 right-0 backdrop-blur-sm z-50 relative w-full">
-      <div class="container mx-auto pt-4">
-        <nav class="flex justify-between items-center pb-4 border-b-2 border-primary lg:px-4">
-          <img src="./assets/logo.webp" alt="Logo" class="w-20 px-4" />
-          <ul class="hidden lg:flex space-x-6 font-display font-semibold">
-            <li><a href="#sobre-mi" class="hover:text-primary transition-colors">Sobre mí</a></li>
-            <li><a href="#proyectos" class="hover:text-primary transition-colors">Proyectos</a></li>
-            <li><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
-          </ul>
-        </nav>
+    <header class="sticky top-0 z-50 backdrop-blur-sm bg-background/80">
+      <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#hero" class="flex items-center">
+          <img src="./assets/logo.webp" alt="Logo" class="w-16" />
+        </a>
+
+        <!-- Desktop nav -->
+        <ul class="hidden lg:flex gap-8 font-display font-semibold">
+          <li><a href="#sobre-mi" class="hover:text-primary transition">Sobre mí</a></li>
+          <li><a href="#experiencia" class="hover:text-primary transition">Experiencia</a></li>
+          <li><a href="#proyectos" class="hover:text-primary transition">Proyectos</a></li>
+          <li><a href="#contacto" class="hover:text-primary transition">Contacto</a></li>
+        </ul>
+
+        <!-- Mobile button -->
+        <button id="menu-btn" class="lg:hidden flex flex-col gap-1" aria-label="Abrir menú">
+          <span class="w-6 h-[2px] bg-white"></span>
+          <span class="w-6 h-[2px] bg-white"></span>
+          <span class="w-6 h-[2px] bg-white"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden flex flex-col items-center justify-center lg:hidden absolute top-full left-0 w-full flex flex-col gap-6 px-6 py-8 font-display font-semibold bg-background bg-opacity-80 border-t border-primary"
+      >
+        <a href="#sobre-mi" class="hover:text-primary">Sobre mí</a>
+        <a href="#experiencia" class="hover:text-primary">Experiencia</a>
+        <a href="#proyectos" class="hover:text-primary">Proyectos</a>
+        <a href="#contacto" class="hover:text-primary">Contacto</a>
       </div>
     </header>
+
     <!-- HERO -->
-    <section id="hero" class="relative min-h-[85vh] lg:max-w-7xl md:max-w-xl mx-auto">
+    <section id="hero" class="relative min-h-[85vh] lg:max-w-7xl md:max-w-xl mx-auto scroll-mt-32">
       <!-- Background elements -->
       <div class="absolute inset-0 z-0 md:-translate-y-10">
         <img src="./assets/balloon 1.png" alt="" class="absolute right-0 pt-20 w-40 lg:w-[396px] h-auto animate-floatFast md:pt-20" />
@@ -96,7 +119,7 @@
     </section>
     <main class="relative mx-auto max-w-7xl px-6 lg:px-12">
       <!-- SOBRE MÍ -->
-      <section id="sobre-mi" class="relative z-20 pt-0 pb-12">
+      <section id="sobre-mi" class="relative z-20 pt-0 pb-12 scroll-mt-32">
         <div class="container px-4 flex flex-col items-center lg:flex-row gap-12">
           <!-- Texto -->
           <div class="max-w-xl mx-auto lg:mx-0 lg:mr-24">
@@ -132,7 +155,7 @@
       </section>
 
       <!-- EXPERIENCIA -->
-      <section id="experiencia" class="relative z-20 py-12">
+      <section id="experiencia" class="relative z-20 py-12 scroll-mt-32">
         <div class="container mx-auto px-4 flex flex-col items-center lg:flex-row gap-12">
           <!-- Experiencia -->
           <article class="border-2 border-white rounded-lg p-4 max-w-lg mx-auto lg:mx-0 lg:mr-48">
@@ -315,7 +338,7 @@
       </section>
 
       <!-- LANDING PAGES -->
-      <section id="landing-pages" class="relative z-20 py-12">
+      <section id="landing-pages" class="relative z-20 py-12 scroll-mt-32">
         <div class="container mx-auto px-4">
           <header class="mb-16 text-center lg:text-left">
             <h2 class="text-3xl font-bold font-body italic">Landing Pages</h2>
@@ -385,13 +408,64 @@
       </section>
 
       <!-- Contacto -->
-      <section id="contacto" class="relative z-20 pt-24 pb-12">
+      <section id="contacto" class="relative z-20 pt-24 pb-12 scroll-mt-32">
         <div class="container mx-auto px-4">
-          <header class="mb-16 text-center lg:text-left">
+          <header class="mb-16 text-center lg:text-center">
             <h2 class="text-3xl font-bold font-body italic">Contacto</h2>
           </header>
         </div>
+
+        <div class="container mx-auto max-w-3xl border border-primary px-6 py-12 flex flex-col items-center text-center gap-10 rounded-2xl">
+          <p class="font-display text-body text-2xl font-medium">
+            ¿Te interesa trabajar conmigo o conocer más sobre mi experiencia?
+            <br />
+            Estoy abierto a nuevas oportunidades y colaboraciones.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-6">
+            <a href="mailto:ayanni1998@gmail.com" class="bg-primary text-white font-display font-semibold px-8 py-4 rounded-full text-lg hover:opacity-90 transition">Envíame un correo</a>
+
+            <a
+              href="https://www.linkedin.com/in/ayanni-alejandro-p%C3%A9rez-hern%C3%A1ndez-084090197/"
+              target="_blank"
+              class="border-2 border-primary text-primary font-display font-semibold px-8 py-4 rounded-full text-lg hover:bg-primary hover:text-white transition"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
       </section>
+
+      <!-- Footer -->
+      <footer class="relative z-20 pt-12 pb-12 scroll-mt-32 border-t border-primary">
+        <div class="container mx-auto px-4">
+          <header class="mb-16 text-center lg:text-center">
+            <h2 class="text-3xl font-bold font-body italic">Gracias por visitar mi portfolio</h2>
+            <div class="mt-8 lg:flex flex-row items-center gap-4 mx-auto max-w-2xl">
+              <img src="./assets/logo.webp" alt="Logo" class="w-auto h-12" />
+              <p>|</p>
+              <p class="font-display text-body text-lg">
+                Portafolio diseñado y creado por
+                <span class="font-semibold">Ayanni Alejandro Pérez Hernández</span>
+              </p>
+            </div>
+          </header>
+        </div>
+      </footer>
     </main>
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
   </body>
 </html>
