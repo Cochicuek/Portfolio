@@ -424,7 +424,7 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-6">
-            <a href="mailto:ayanni1998@gmail.com" class="bg-primary text-white font-display font-semibold px-8 py-4 rounded-full text-lg hover:opacity-90 transition">Envíame un correo</a>
+            <a id="copy-email" href="#" class="bg-primary text-white font-display font-semibold px-8 py-4 rounded-full text-lg hover:opacity-90 transition">Envíame un correo</a>
 
             <a
               href="https://www.linkedin.com/in/ayanni-alejandro-p%C3%A9rez-hern%C3%A1ndez-084090197/"
@@ -465,6 +465,23 @@
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+    <script>
+      const copyEmailBtn = document.getElementById('copy-email');
+      const email = 'ayanni1998@hotmail.com';
+
+      copyEmailBtn.addEventListener('click', e => {
+        e.preventDefault();
+
+        navigator.clipboard.writeText(email).then(() => {
+          const originalText = copyEmailBtn.textContent;
+          copyEmailBtn.textContent = 'Correo copiado ✅';
+
+          setTimeout(() => {
+            copyEmailBtn.textContent = originalText;
+          }, 2000);
         });
       });
     </script>
