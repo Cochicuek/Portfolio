@@ -477,7 +477,7 @@
 
         navigator.clipboard.writeText(email).then(() => {
           const originalText = copyEmailBtn.textContent;
-          copyEmailBtn.textContent = 'Correo copiado ✅';
+          copyEmailBtn.textContent = 'Correo copiado';
 
           setTimeout(() => {
             copyEmailBtn.textContent = originalText;
